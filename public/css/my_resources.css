@@ -1,0 +1,184 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins','sans-serif';
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #5a5a5a;
+}
+img{
+	cursor: pointer;
+}
+.flex-div{
+	display: flex;
+	align-items: center;
+}
+nav{
+	padding: 10px 2%;
+	justify-content: space-between;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	background: #fff;
+	position: sticky;
+	top:0;
+	z-index: 10;
+}
+.nav-right img{
+	width: 25px;
+	margin-right: 25px;
+}
+.nav-right .user-icon{
+	width: 35px;
+	border-radius: 50%;
+	margin: 0;
+}
+.nav-left .menu-icon{
+	width: 22px;
+	margin-right: 25px;
+}
+.nav-left .logo{
+	width: 100px;
+}
+.nav-middle .search-box{
+	border: 1px solid #ccc;
+	margin-right: 15px;
+	padding: 8px 12px;
+	border-radius: 25px;
+}
+.nav-middle .search-box input{
+	width: 400px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+.nav-middle .search-box img{
+	width: 15px;
+}
+/*-------------sidebar------------*/
+.sidebar{
+	background: #fff;
+	width: 15%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	padding-left: 2%;
+	padding-top: 80px;
+}
+.sidebar .profileImg img{
+	width: 100px;
+	height: 100px;
+	margin-left: 20px;
+	margin-top: 20px;
+	border-radius: 10%;
+}
+.sidebar .profileImg h1{
+	font-size: large;
+}
+.sidebar .profileImg p{
+	align-items: center;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+.shortcut-links a img{
+	width: 20px;
+	margin-right: 20px;
+}
+.shortcut-links a{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	width: fit-content;
+	flex-wrap: wrap;
+}
+.sidebar hr{
+	border: 0;
+	height: 1px;
+	background: #ccc;
+	width: 85%;
+}
+
+.subscribed-list a{
+	display: flex;
+	margin: 20px 0;
+	align-items: center;
+	margin-bottom: 20px;
+	width: fit-content;
+	flex-wrap: wrap;
+}
+.subscribed-list a img{
+	width: 20px;
+	margin-right: 20px;
+}
+
+.small-slidebar{
+	width: 5%;
+}
+.small-slidebar a p{
+	display: none;
+}
+.small-slidebar h3{
+	display: none;
+}
+.small-slidebar .profileImg img{
+	display: none;
+}
+.small-slidebar .profileImg h1{
+	display: none;
+}
+.small-slidebar .profileImg p{
+	display: none;
+}
+.small-slidebar a img{
+	margin-top: 10px;
+}
+.small-slidebar hr{
+	width: 50%;
+	margin-bottom: 25px;
+}
+/*-----------main------------*/
+.container{
+	background: #f9f9f9;
+	padding-left: 17%;
+	padding-right: 2%;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+@media screen and (max-width: 1050px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .side-menu li span {
+        display: none;
+    }
+    .side-menu {
+        align-items: center;
+    }
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+    .side-menu li:hover {
+        background: #f05462;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width:536px) {
+    .brand-name h1 {
+        font-size: 16px;
+    }
+    .container .content .cards {
+        justify-content: center;
+    }
+    .side-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+    .container .content .content-2 .recent-payments table th:nth-child(2),
+    .container .content .content-2 .recent-payments table td:nth-child(2) {
+        display: none;
+    }
+}
